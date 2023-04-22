@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": ["@changesets/cli/changelog", {"repo": "http://gitlab.iwhalecloud.com/rnyytest/fish4tt.git"}],
+  "changelog": ["@changesets/changelog-github", {"repo": "https://github.com/momoliyao/study.git"}],
   "commit": false,
   "fixed": [],
   "linked": [],
