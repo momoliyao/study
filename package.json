@@ -1,0 +1,86 @@
+{
+  "name": "fishx4TT",
+  "version": "0.1.6",
+  "author": "lihuazheng",
+  "scripts": {
+    "start": "fishx dev --port=9090",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=2048 fishx build",
+    "test": "fishx test",
+    "lint": "fishx lint --eslint --ext=.js,.jsx --type=es6 src/",
+    "prettier": "fishx lint --prettier src/",
+    "fix": "fishx lint --eslint --ext=.js,.jsx --type=es6 --fix src/",
+    "analyze": "cross-env ANALYZE=true fishx dev --port=7534",
+    "changeset": "changeset"
+  },
+  "description": "Fishx-fdx4空模板",
+  "husky": {
+    "hooks": {
+      "pre-commit": "fishx lint --eslint --ext=.js,.jsx --type=es6 --staged"
+    }
+  },
+  "homepage": ".",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 9-11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 9-11"
+    ]
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
+    "@fishx/cli": "4.3.11-beta.44",
+    "@fishx/core": "3.0.2-alpha.0",
+    "@fishx/dva": "1.0.2-alpha.0",
+    "@fishx/i18n": "1.0.2-alpha.0",
+    "@fishx/logger": "1.0.2-alpha.0",
+    "@fishx/plugins": "^4.0.59",
+    "@fishx/rest": "^2.0.8",
+    "@fishx/router": "2.0.3-alpha.0",
+    "@fishx/utils": "^1.0.6",
+    "@whalecloud/fdx": "^4.0.1",
+    "@whalecloud/fdx4-theme-fdx": "^0.0.1",
+    "antd": "4.23.5",
+    "react": "17.0.0",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "17.0.0",
+    "react-redux": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "babel-plugin-import": "^1.12.2",
+    "cross-env": "^7.0.2"
+  },
+  "files": [
+    "src/",
+    "build/",
+    "public/",
+    "CI_Config/",
+    ".env",
+    ".gitignore",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc.js",
+    ".prettierignore",
+    ".prettierrc",
+    "build.json",
+    "screenshot.png",
+    "tsconfig.json",
+    "jsconfig.json",
+    "Dockerfile",
+    "fishx.config.ts",
+    "nginx.conf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.iwhalecloud.com/fishx-template/fishx-fdx4-template"
+  }
+}
