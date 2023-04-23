@@ -1,5 +1,15 @@
 # fishx4TT
 
+## 0.2.0
+
+### Minor Changes
+
+- [`cfa915c`](https://github.com/momoliyao/study/commit/cfa915cabfea89234d11eeeb42fd1a74247c5728) - 江苏啥都好说的
+
+### Patch Changes
+
+- [`a629f32`](https://github.com/momoliyao/study/commit/a629f3271fb60da45ad70233709660b757546a34) - hhhhdsh
+
 ## 0.1.6
 
 ### Patch Changes

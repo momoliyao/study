@@ -79,3 +79,24 @@ npx changeset publish
 yarn changeset publish
 ```
 
+5. chengset 应该是有获取git记录功能的
+
+这次测试，我将自己的github上的项目修改成了public
+
+修改了.changeset/config.json文件
+
+生成github_token放到环境变量中
+
+安装了[Automating Changesets文档](!https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md#recommended-automation-flow) 里面的changeset bot（我安装了，跳转到自己的仓库，但是肉眼没看到什么变化）。
+
+本次进展，能够部分关联git提交记录，但是最终的效果还不是想要的，应该还要其他设置要做
+
+tips: 生成[github_token](!https://link.zhihu.com/?target=https%3A//github.com/settings/tokens/new)  (要配置到环境变量中)
+
+不知道放在非github的上的项目是否可行，搜到了下面这边文档，按需查看
+https://blog.csdn.net/qq_21567385/article/details/122361591
+
+
+
+其他猜想，未完成的： 
+- 工程中怎么添加.github文件夹，有个.github/workflows/changeset-version.yml，个人认为可能有些作用
