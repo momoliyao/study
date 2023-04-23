@@ -1,18 +1,12 @@
-# fishx-fdx4-template
-
-**FISHX fdx模板。**
-
-`FISHX` 官方站点：https://fish.iwhalecloud.com/fishx-desktop-v2/fishx/docs/intro-desktop/base
-
+### changeset 使用步骤（单包）
 安装依赖库
 ```
 devDependencies: {
     "@changesets/changelog-github": "^0.4.8",
-    "@changesets/cli": "^2.19.0"
+    "@changesets/cli": "^2.26.1",
 }
 ```
 
-yarn
 
 根目录下，初始化配置，会生成.changeset文件夹
 ```
@@ -21,7 +15,7 @@ npx changeset init
 
 需要修改下.changeset/config.json中的baseBranch为当前分支，否则会报错
 
-下面是需要重复执行的步骤，就是每当你想声场changelog时，要按照下方的步骤执行一遍
+下面是需要重复执行的步骤，就是每当你想生成changelog时，要按照下方的步骤执行一遍
 
 生成 chanegset
 
@@ -47,6 +41,7 @@ npx changeset version
 
 
 ### 再来一次
+下面是官网提供的命令行，没有太大差别
 
 1. 添加 changeset tool
 ```
